@@ -1,2 +1,2 @@
 
-Copyright (C) 2018 
+Copyright (C) Harrison Cattell 2018 
