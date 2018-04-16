@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblInputFile = new System.Windows.Forms.Label();
@@ -49,22 +48,14 @@
             this.lblOutputLocation = new System.Windows.Forms.Label();
             this.btnOutputLocation = new System.Windows.Forms.Button();
             this.folderDialog = new System.Windows.Forms.FolderBrowserDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FieldMapUI.Properties.Resources.FieldMap_Logo_v3;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(347, 81);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -233,9 +224,9 @@
             this.btnInterpolate.Name = "btnInterpolate";
             this.btnInterpolate.Size = new System.Drawing.Size(232, 136);
             this.btnInterpolate.TabIndex = 3;
-            this.btnInterpolate.Text = "Starting Interpolation";
+            this.btnInterpolate.Text = "Start Interpolation";
             this.btnInterpolate.UseVisualStyleBackColor = true;
-            this.btnInterpolate.Click += new System.EventHandler(this.btnInterpolate_Click_1);
+            this.btnInterpolate.Click += new System.EventHandler(this.btnInterpolate_Click);
             // 
             // groupBox5
             // 
@@ -268,6 +259,15 @@
             this.btnOutputLocation.UseVisualStyleBackColor = true;
             this.btnOutputLocation.Click += new System.EventHandler(this.btnOutputLocation_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FieldMapUI.Properties.Resources.FieldMap_Logo_v31;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(347, 81);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
@@ -285,7 +285,6 @@
             this.Name = "Form1";
             this.Text = "FieldMap_UI";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -294,6 +293,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

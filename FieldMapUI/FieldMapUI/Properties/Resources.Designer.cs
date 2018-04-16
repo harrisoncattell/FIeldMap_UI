@@ -63,36 +63,6 @@ namespace FieldMapUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Export {
-            get {
-                object obj = ResourceManager.GetObject("Export", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FieldMap_Logo {
-            get {
-                object obj = ResourceManager.GetObject("FieldMap_Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FieldMap_Logo_v2 {
-            get {
-                object obj = ResourceManager.GetObject("FieldMap_Logo v2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap FieldMap_Logo_v3 {
             get {
                 object obj = ResourceManager.GetObject("FieldMap_Logo v3", resourceCulture);
@@ -103,69 +73,9 @@ namespace FieldMapUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Interpolate {
+        internal static System.Drawing.Bitmap FieldMap_Logo_v31 {
             get {
-                object obj = ResourceManager.GetObject("Interpolate", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Load_Data_Files {
-            get {
-                object obj = ResourceManager.GetObject("Load Data Files", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngAsset_1 {
-            get {
-                object obj = ResourceManager.GetObject("pngAsset 1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngAsset_2 {
-            get {
-                object obj = ResourceManager.GetObject("pngAsset 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Set_Preferences {
-            get {
-                object obj = ResourceManager.GetObject("Set Preferences", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Step_1 {
-            get {
-                object obj = ResourceManager.GetObject("Step 1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Step_11 {
-            get {
-                object obj = ResourceManager.GetObject("Step 11", resourceCulture);
+                object obj = ResourceManager.GetObject("FieldMap_Logo v31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

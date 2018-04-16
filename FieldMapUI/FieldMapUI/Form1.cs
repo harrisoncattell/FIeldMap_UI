@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using MathWorks.MATLAB.NET.Arrays;
+using MathWorks.MATLAB.NET.Utility;
+
+using FieldMap;
+
 namespace FieldMapUI
 {
     public partial class Form1 : Form
@@ -18,7 +23,7 @@ namespace FieldMapUI
         public int mapColor = 0;
         public int intDegree = 0;
         public bool isSettingLocked = false;
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -102,7 +107,7 @@ namespace FieldMapUI
         {
 
             folderDialog.ShowDialog();
-            outputFilename = folderDialog.SelectedPath;
+            outputFilename = folderDialog.SelectedPath + "\\export.jpg";
 
             lblOutputLocation.Text = outputFilename;
             
@@ -115,7 +120,8 @@ namespace FieldMapUI
             if(inputFilename != null && outputFilename != null && isSettingLocked == true)
             {
 
-                MessageBox.Show("Success");
+                MessageBox.Show(outputFilename);
+                Connect_Matlab();
                 inputFilename = null;
                 outputFilename = null;
                 lblInputFile.Text = null;
@@ -131,5 +137,13 @@ namespace FieldMapUI
 
         }
 
+        public void Connect_Matlab()
+        {
+
+            Main obj = new Main();
+
+            obj.FieldMap(inputFilename, outputFilename, intDegree, mapColor);
+
+        }
     }
 }
