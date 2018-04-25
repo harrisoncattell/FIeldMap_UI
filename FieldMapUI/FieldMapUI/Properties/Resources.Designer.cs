@@ -63,9 +63,9 @@ namespace FieldMapUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FieldMap_Logo_v3 {
+        internal static System.Drawing.Bitmap FieldMap_Logo_v2 {
             get {
-                object obj = ResourceManager.GetObject("FieldMap_Logo v3", resourceCulture);
+                object obj = ResourceManager.GetObject("FieldMap_Logo v2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace FieldMapUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FieldMap_Logo_v31 {
+        internal static System.Drawing.Bitmap Untitled_6 {
             get {
-                object obj = ResourceManager.GetObject("FieldMap_Logo v31", resourceCulture);
+                object obj = ResourceManager.GetObject("Untitled-6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

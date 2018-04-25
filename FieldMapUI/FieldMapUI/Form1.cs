@@ -18,6 +18,7 @@ namespace FieldMapUI
     public partial class Form1 : Form
     {
 
+        // Initalises public veriables
         public string inputFilename = null;
         public string outputFilename = null;
         public int mapColor = 0;
@@ -29,14 +30,11 @@ namespace FieldMapUI
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        // Handles LoadDataFile button click
         private void btnLoadDataFile_Click(object sender, EventArgs e)
         {
 
+            // Opens file selector
             openFile.InitialDirectory = "c:\\";
             openFile.Filter = "txt files (*.txt)|*.txt";
             openFile.FilterIndex = 1;
@@ -51,6 +49,7 @@ namespace FieldMapUI
             }
         }
 
+        // Handles LockSettings button click
         private void btnLockSettings_Click(object sender, EventArgs e)
         {
 
@@ -59,7 +58,7 @@ namespace FieldMapUI
             if (intDegree == 0)
             {
 
-                MessageBox.Show("Please select degree of interpolation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select degree of interpolation, the defaul is 2", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -79,7 +78,7 @@ namespace FieldMapUI
             else if(mapColor == 0)
             {
 
-                MessageBox.Show("Please select a map color", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a map color, the default is pH", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
@@ -93,6 +92,7 @@ namespace FieldMapUI
 
         }
 
+        // Handles UnlockSettings button click
         private void btnUnlockSettings_Click(object sender, EventArgs e)
         {
 
@@ -103,9 +103,11 @@ namespace FieldMapUI
 
         }
 
+        // Handles OutputLocation button click
         private void btnOutputLocation_Click(object sender, EventArgs e)
         {
 
+            // Opens folder dialogue
             folderDialog.ShowDialog();
             outputFilename = folderDialog.SelectedPath + "\\export.jpg";
 
@@ -114,14 +116,17 @@ namespace FieldMapUI
 
         }
 
+        // Handles Interpolation button click
         private void btnInterpolate_Click(object sender, EventArgs e)
         {
 
             if(inputFilename != null && outputFilename != null && isSettingLocked == true)
             {
 
-                MessageBox.Show(outputFilename);
-                Connect_Matlab();
+
+                Connect_Matlab(); //Links to function to carry out interpolation
+
+                // Sets filepaths  back to null
                 inputFilename = null;
                 outputFilename = null;
                 lblInputFile.Text = null;
@@ -131,18 +136,49 @@ namespace FieldMapUI
             else
             {
 
+                // Displays error message
                 MessageBox.Show("Please input a data file, specify an output location and lock settings", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
         }
 
+        // Calls the class in the library 'FieldMap'
         public void Connect_Matlab()
         {
 
-            Main obj = new Main();
+            try
+            {
+                Interpolate_Data obj = new Interpolate_Data(); // Creates object
 
-            obj.FieldMap(inputFilename, outputFilename, intDegree, mapColor);
+                obj.FieldMap(inputFilename, outputFilename, intDegree, mapColor); // Uses object to call fieldmap function and pass arguments
+
+                MessageBox.Show("Analysis Complete, exported image saved to chosen location", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+            catch(Exception e)
+            {
+
+                MessageBox.Show("An error has occurred: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            rbPH.Checked = true;
+            comboIntDegree.SelectedItem = "2";
+            intDegree = 2;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            help help_info = new help();
+            help_info.Show();
 
         }
     }

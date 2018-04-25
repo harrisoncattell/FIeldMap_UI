@@ -86,11 +86,12 @@
             this.lblInputFile.AutoSize = true;
             this.lblInputFile.Location = new System.Drawing.Point(8, 32);
             this.lblInputFile.Name = "lblInputFile";
-            this.lblInputFile.Size = new System.Drawing.Size(0, 23);
+            this.lblInputFile.Size = new System.Drawing.Size(0, 20);
             this.lblInputFile.TabIndex = 0;
             // 
             // btnLoadDataFile
             // 
+            this.btnLoadDataFile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadDataFile.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLoadDataFile.Location = new System.Drawing.Point(8, 40);
             this.btnLoadDataFile.Name = "btnLoadDataFile";
@@ -123,7 +124,8 @@
             // 
             // btnUnlockSettings
             // 
-            this.btnUnlockSettings.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUnlockSettings.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUnlockSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnUnlockSettings.Location = new System.Drawing.Point(200, 168);
             this.btnUnlockSettings.Name = "btnUnlockSettings";
             this.btnUnlockSettings.Size = new System.Drawing.Size(136, 55);
@@ -134,6 +136,7 @@
             // 
             // btnLockSettings
             // 
+            this.btnLockSettings.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLockSettings.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLockSettings.Location = new System.Drawing.Point(8, 168);
             this.btnLockSettings.Name = "btnLockSettings";
@@ -147,9 +150,9 @@
             // 
             this.rbColour.AutoSize = true;
             this.rbColour.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rbColour.Location = new System.Drawing.Point(120, 136);
+            this.rbColour.Location = new System.Drawing.Point(128, 136);
             this.rbColour.Name = "rbColour";
-            this.rbColour.Size = new System.Drawing.Size(78, 28);
+            this.rbColour.Size = new System.Drawing.Size(66, 24);
             this.rbColour.TabIndex = 4;
             this.rbColour.TabStop = true;
             this.rbColour.Text = "Colour";
@@ -159,9 +162,9 @@
             // 
             this.rbPH.AutoSize = true;
             this.rbPH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rbPH.Location = new System.Drawing.Point(120, 104);
+            this.rbPH.Location = new System.Drawing.Point(128, 104);
             this.rbPH.Name = "rbPH";
-            this.rbPH.Size = new System.Drawing.Size(52, 28);
+            this.rbPH.Size = new System.Drawing.Size(44, 24);
             this.rbPH.TabIndex = 3;
             this.rbPH.TabStop = true;
             this.rbPH.Text = "pH";
@@ -173,7 +176,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(16, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 24);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Map Type:";
             // 
@@ -190,9 +193,9 @@
             "8",
             "9",
             "10"});
-            this.comboIntDegree.Location = new System.Drawing.Point(232, 48);
+            this.comboIntDegree.Location = new System.Drawing.Point(128, 49);
             this.comboIntDegree.Name = "comboIntDegree";
-            this.comboIntDegree.Size = new System.Drawing.Size(88, 32);
+            this.comboIntDegree.Size = new System.Drawing.Size(56, 28);
             this.comboIntDegree.TabIndex = 1;
             // 
             // label2
@@ -201,9 +204,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(16, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 24);
+            this.label2.Size = new System.Drawing.Size(93, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Degree of Interpolation: ";
+            this.label2.Text = "Interval Value:";
             // 
             // groupBox4
             // 
@@ -220,9 +223,10 @@
             // 
             // btnInterpolate
             // 
+            this.btnInterpolate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInterpolate.Location = new System.Drawing.Point(8, 200);
             this.btnInterpolate.Name = "btnInterpolate";
-            this.btnInterpolate.Size = new System.Drawing.Size(232, 136);
+            this.btnInterpolate.Size = new System.Drawing.Size(232, 152);
             this.btnInterpolate.TabIndex = 3;
             this.btnInterpolate.Text = "Start Interpolation";
             this.btnInterpolate.UseVisualStyleBackColor = true;
@@ -245,11 +249,12 @@
             this.lblOutputLocation.AutoSize = true;
             this.lblOutputLocation.Location = new System.Drawing.Point(8, 32);
             this.lblOutputLocation.Name = "lblOutputLocation";
-            this.lblOutputLocation.Size = new System.Drawing.Size(0, 23);
+            this.lblOutputLocation.Size = new System.Drawing.Size(0, 20);
             this.lblOutputLocation.TabIndex = 0;
             // 
             // btnOutputLocation
             // 
+            this.btnOutputLocation.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOutputLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnOutputLocation.Location = new System.Drawing.Point(8, 40);
             this.btnOutputLocation.Name = "btnOutputLocation";
@@ -261,18 +266,18 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FieldMapUI.Properties.Resources.FieldMap_Logo_v31;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.Image = global::FieldMapUI.Properties.Resources.FieldMap_Logo_v2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(347, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(536, 112);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(625, 481);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -282,6 +287,10 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(641, 520);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(641, 520);
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "FieldMap_UI";
             this.Load += new System.EventHandler(this.Form1_Load);
