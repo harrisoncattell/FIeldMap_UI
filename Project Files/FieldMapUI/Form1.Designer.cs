@@ -49,6 +49,7 @@
             this.btnOutputLocation = new System.Windows.Forms.Button();
             this.folderDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -137,7 +138,7 @@
             // btnLockSettings
             // 
             this.btnLockSettings.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLockSettings.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLockSettings.ForeColor = System.Drawing.Color.Green;
             this.btnLockSettings.Location = new System.Drawing.Point(8, 168);
             this.btnLockSettings.Name = "btnLockSettings";
             this.btnLockSettings.Size = new System.Drawing.Size(184, 55);
@@ -273,12 +274,24 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Location = new System.Drawing.Point(544, 8);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 32);
+            this.btnHelp.TabIndex = 5;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(625, 481);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -328,6 +341,7 @@
         private System.Windows.Forms.Button btnOutputLocation;
         private System.Windows.Forms.FolderBrowserDialog folderDialog;
         private System.Windows.Forms.Button btnInterpolate;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 

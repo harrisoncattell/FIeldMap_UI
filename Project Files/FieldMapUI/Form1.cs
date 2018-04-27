@@ -168,15 +168,18 @@ namespace FieldMapUI
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            // Dfault options when program loads
             rbPH.Checked = true;
             comboIntDegree.SelectedItem = "2";
             intDegree = 2;
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        // Handles btnHelp button click
+        private void btnHelp_Click(object sender, EventArgs e)
         {
 
+            // Shows help form
             help help_info = new help();
             help_info.Show();
 

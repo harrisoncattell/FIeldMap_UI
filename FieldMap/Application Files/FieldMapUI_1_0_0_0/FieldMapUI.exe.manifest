@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FieldMapUI.exe" version="1.0.0.0" publicKeyToken="9857f30b97e90b3f" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FieldMapUI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="FieldMapUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FieldMap.dll" size="34304">
+      <assemblyIdentity name="FieldMap" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X8AQP+zoZqs92LfjFpMd78VBKwLxJQToPqoLay+9dYI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FieldMapUI.exe" size="1192952">
+      <assemblyIdentity name="FieldMapUI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>P7SWWESJs4TP8aY3fkmAQsOaVd1eadhtw1TyEYvHIzM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MWArray.dll" size="114688">
+      <assemblyIdentity name="MWArray" version="2.18.0.0" publicKeyToken="E1D84A0DA19DB86F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xRa6dYJPxTL1A/sB/RFE2XSoV+Dk+Z15dcb/8tCHvHA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FieldMapUI.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=HCLAPTOP\Harrison_Cattell" issuerKeyHash="eceb4e93a0da530b1f9bc3f8c9a4506394c8ead3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FAcXIo2phXBUxFwWa/kXyZzSS1/3wFFbYHfxdE78DtQ=</DigestValue></Reference></SignedInfo><SignatureValue>gbdLMxS9IctnqZWsp6tZZ5kXYpjTW6iMkZLj6yBijzw7pmot9iRPXVK6Zm6Bw6TimoC/A/+wzjeVJ8MdEuCo4nMf7nhIFwEqxTrYfA0I01aTdW00EFygoXRGP4EWoJdIgxwlqJOGlaXzO6GSjDXJMnq3dBrMDa9Bzp5WkRoQWek=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>v5Rtf9JsWFXl8MmZA+0AQEwcWdvFDNtk18bQgkLbZWuqwaVzF/e5T6XeSRoovnsGmbRs8+rjHvb880zPg+q5atH5memIXGG4IS+CJzDzOVM1WrLkh6jvvKVYxFcNxlYDtvHPNkGR9JjzmZvJRjW9AoiGSSyIqOAgdOM3EEuP6xk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d40efc4e74f177605b51c0f75f4bd29cc917f96b165cc4547085a98d22170714" Description="" Url=""><as:assemblyIdentity name="FieldMapUI.exe" version="1.0.0.0" publicKeyToken="9857f30b97e90b3f" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HCLAPTOP\Harrison_Cattell</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EPv+KKkof+tL9iqrNz8/kxOZe5F/q2C0M4573x+thec=</DigestValue></Reference></SignedInfo><SignatureValue>ADsVivfQdncSuE40SBlfLOhOM6tyfCw/3+Gnogb/lqOFv2S0AKza2x4OyNQkjxrq5DEBtyY8319FqWcOjT8Vuo3SiPkvtBNPrMeTU2qDiykCoIa7U7xZPfudhvPBKjxvovfmHuuKCSEMZsCli0KV8dhIsBtVRENOGyYajsbsTMY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>v5Rtf9JsWFXl8MmZA+0AQEwcWdvFDNtk18bQgkLbZWuqwaVzF/e5T6XeSRoovnsGmbRs8+rjHvb880zPg+q5atH5memIXGG4IS+CJzDzOVM1WrLkh6jvvKVYxFcNxlYDtvHPNkGR9JjzmZvJRjW9AoiGSSyIqOAgdOM3EEuP6xk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQGuAwJ8A7DJNBZR04j6hMVTANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIASABDAEwAQQBQAFQATwBQAFwASABhAHIAcgBpAHMAbwBuAF8AQwBhAHQAdABlAGwAbDAeFw0xODA0MjYwOTE1NDVaFw0xOTA0MjYxNTE1NDVaMD0xOzA5BgNVBAMeMgBIAEMATABBAFAAVABPAFAAXABIAGEAcgByAGkAcwBvAG4AXwBDAGEAdAB0AGUAbABsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/lG1/0mxYVeXwyZkD7QBATBxZ28UM22TXxtCCQttla6rBpXMX97lPpd5JGii+ewaZtGzz6uMe9vzzTM+D6rlq0fmZ6YhcYbghL4InMPM5UzVasuSHqO+8pVjEVw3GVgO28c82QZH0mPOZm8lGNb0CiIZJLIio4CB04zcQS4/rGQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALM2kYDiS/pcfW0pgioOvkW7i0zQL072T8ms4Zm04LoLaiHUgRPZOCN/+UOg0p2suI0ArIzMQqZHB9zL0FiH5yCeCWsmGMtYBdFkU5/ycKHH+bl88n0MUzWFl7Nu1o7b5sV6hmlCJYpS7c1WDRDEabK/Fba0+lsGl/dak7dbWeLn</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
